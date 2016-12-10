@@ -1,8 +1,8 @@
-package ch.makery.address.view;
+package iStud.view;
 
-import ch.makery.address.model.Etudiant;
-import ch.makery.address.model.NoteHW;
-import ch.makery.address.model.NoteTest;
+import iStud.model.Etudiant;
+import iStud.model.NoteHW;
+import iStud.model.NoteTest;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;

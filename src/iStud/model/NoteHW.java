@@ -1,4 +1,4 @@
-package ch.makery.address.model;
+package iStud.model;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;

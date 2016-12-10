@@ -1,7 +1,7 @@
-package ch.makery.address.view;
+package iStud.view;
 
 import Main.Main;
-import ch.makery.address.model.Etudiant;
+import iStud.model.Etudiant;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

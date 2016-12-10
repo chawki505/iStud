@@ -1,6 +1,6 @@
 package Main;
 
-import ch.makery.address.model.Etudiant;
+import iStud.model.Etudiant;
 
 import database.DBConnection;
 import database.DBEtudiant;

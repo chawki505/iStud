@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.PersonOverviewController">
     <children>
         <SplitPane dividerPositions="0.33954154727793695" layoutX="179.0" layoutY="89.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <items>
@@ -23,8 +23,8 @@
                         <TableView fx:id="personTable" layoutX="-13.0" layoutY="6.0" prefHeight="298.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <columns>
                                 <TableColumn fx:id="idColumn" prefWidth="50.0" resizable="false" text="ID" />
-                                <TableColumn fx:id="firstNameColumn" resizable="false" text="Nom" />
-                                <TableColumn fx:id="lastNameColumn" resizable="false" text="Prenom" />
+                                <TableColumn fx:id="firstNameColumn" prefWidth="98.0" resizable="false" text="Nom" />
+                                <TableColumn fx:id="lastNameColumn" prefWidth="98.0" resizable="false" text="Prenom" />
                             </columns>
                         </TableView>
                     </children>

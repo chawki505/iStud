@@ -1,4 +1,4 @@
-package ch.makery.address.view;
+package iStud.view;
 
 import Main.Main;
 import javafx.fxml.FXMLLoader;

@@ -1,10 +1,10 @@
 package Main;
 
-import ch.makery.address.model.Etudiant;
+import iStud.model.Etudiant;
 
 
-import ch.makery.address.model.NoteHW;
-import ch.makery.address.model.NoteTest;
+import iStud.model.NoteHW;
+import iStud.model.NoteTest;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

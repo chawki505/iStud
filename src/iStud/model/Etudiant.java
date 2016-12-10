@@ -1,4 +1,4 @@
-package ch.makery.address.model;
+package iStud.model;
 
 import javafx.beans.property.*;
 import javafx.collections.FXCollections;
@@ -132,4 +132,17 @@ public class Etudiant {
         this.pointPlus.set(pointPlus);
     }
 
+    @Override
+    public String toString() {
+        return "Etudiant{" +
+                "id=" + id +
+                ", nom=" + nom +
+                ", prenom=" + prenom +
+                ", sexe=" + sexe +
+                ", dateNaissance=" + dateNaissance +
+                ", absence=" + absence +
+                ", examen=" + examen +
+                ", pointPlus=" + pointPlus +
+                '}';
+    }
 }

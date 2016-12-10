@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewController">
+    <children>
+        <SplitPane dividerPositions="0.33954154727793695" layoutX="179.0" layoutY="89.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="249.0">
+                    <children>
+                        <TableView fx:id="personTable" layoutX="-13.0" layoutY="6.0" prefHeight="298.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="idColumn" prefWidth="50.0" resizable="false" text="ID" />
+                                <TableColumn fx:id="firstNameColumn" resizable="false" text="Nom" />
+                                <TableColumn fx:id="lastNameColumn" resizable="false" text="Prenom" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="409.0">
+                    <children>
+                        <Button layoutX="340.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleDeletePerson" text="Suprimer" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="5.0" />
+                        <Button layoutX="281.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleEditPerson" text="Modifier" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="90.0" />
+                        <Button layoutX="203.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleNewPerson" text="Ajouter" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="168.0" />
+                        <AnchorPane prefHeight="261.0" prefWidth="462.0">
+                            <children>
+                                <TabPane layoutX="14.0" layoutY="14.0" prefHeight="261.0" prefWidth="523.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-61.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab text="Detail">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="228.0" prefWidth="445.0">
+                                                    <children>
+                                                        <GridPane layoutX="10.0" layoutY="9.0" prefHeight="203.0" prefWidth="452.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
+                                                            <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <Label text="ID" />
+                                                                <Label text="Nom" GridPane.rowIndex="1" />
+                                                                <Label text="Prenom" GridPane.rowIndex="2" />
+                                                                <Label text="Date de naissence" GridPane.rowIndex="3" />
+                                                                <Label text="Sexe" GridPane.rowIndex="4" />
+                                                                <Label fx:id="idLabel" text="Label" GridPane.columnIndex="1" />
+                                                                <Label fx:id="nomLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                                <Label fx:id="prenomLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                                <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                                <Label fx:id="sexeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                                <Label text="Absence" GridPane.rowIndex="5" />
+                                                                <Label fx:id="absenceLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                                <Button disable="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                    <GridPane.margin>
+                                                                        <Insets left="140.0" />
+                                                                    </GridPane.margin>
+                                                                    <font>
+                                                                        <Font name="System Bold" size="13.0" />
+                                                                    </font>
+                                                                </Button>
+                                                                <Button mnemonicParsing="false" onAction="#abssence" prefHeight="26.0" prefWidth="30.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                    <GridPane.margin>
+                                                                        <Insets left="180.0" />
+                                                                    </GridPane.margin>
+                                                                    <font>
+                                                                        <Font name="System Bold" size="13.0" />
+                                                                    </font>
+                                                                </Button>
+                                                            </children>
+                                                        </GridPane>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Note">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <GridPane layoutX="171.0" prefHeight="63.0" prefWidth="290.0" AnchorPane.leftAnchor="200.0">
+                                                            <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <Label text="Point en plus" />
+                                                                <Label prefHeight="16.0" prefWidth="59.0" text="Examen" GridPane.rowIndex="1" />
+                                                                <Label fx:id="pointLabel" text="Label" GridPane.columnIndex="1" />
+                                                                <Label fx:id="examenLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Button mnemonicParsing="false" onAction="#insertPointPlus" text="+" GridPane.columnIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="100.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#insertExamen" text="+" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="100.0" />
+                                                   </GridPane.margin>
+                                                </Button>
+                                                            </children>
+                                                        </GridPane>
+                                                        <GridPane layoutX="173.0" layoutY="124.0" prefHeight="90.0" prefWidth="287.0" AnchorPane.leftAnchor="200.0">
+                                                            <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <Label text="CC" />
+                                                                <Label text="Moyenne" GridPane.rowIndex="1" />
+                                                                <Label text="remarque" GridPane.rowIndex="2" />
+                                                                <Label fx:id="ccLabel" text="Label" GridPane.columnIndex="1" />
+                                                                <Label fx:id="moyenneLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                                <Label fx:id="remarqueLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                            </children>
+                                                        </GridPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="95.0">
+                                             <children>
+                                                <TableView fx:id="noteTableTest" layoutX="-52.0" layoutY="-35.0" prefHeight="200.0" prefWidth="95.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="testColumn" prefWidth="75.0" resizable="false" text="Test" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="95.0" prefHeight="200.0" prefWidth="95.0">
+                                             <children>
+                                                <TableView fx:id="noteTableHw" layoutX="-44.0" layoutY="-35.0" prefHeight="200.0" prefWidth="95.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="homeWorkColumn" prefWidth="75.0" resizable="false" text="HW" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <Button layoutX="31.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNewNoteTest" text="+" />
+                                          <Button layoutX="125.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNewNoteHW" text="+" />
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                        <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" text="Retour" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

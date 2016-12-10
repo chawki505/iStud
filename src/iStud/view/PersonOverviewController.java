@@ -3,15 +3,20 @@ package iStud.view;
 import iStud.model.Etudiant;
 import iStud.model.NoteHW;
 import iStud.model.NoteTest;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import Main.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -357,4 +362,19 @@ public class PersonOverviewController {
             e.printStackTrace();
         }
     }
+
+
+    @FXML
+    private void retour() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Connexion.fxml"));
+        Main.getPrimaryStage().close();
+        Main.setPrimaryStage(new Stage());
+        Main.getPrimaryStage().setScene(new Scene(root));
+        Main.getPrimaryStage().setResizable(false);
+        Main.getPrimaryStage().setAlwaysOnTop(true);
+        Main.getPrimaryStage().setTitle("iStud");
+        Main.getPrimaryStage().show();
+
+    }
+
 }

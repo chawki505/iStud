@@ -4,6 +4,9 @@ package Main;
 import iStud.view.PersonOverviewController;
 import iStud.view.RootLayoutControl;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
@@ -18,20 +21,19 @@ public class Main extends Application {
         return primaryStage;
     }
 
+    public static void setPrimaryStage(Stage primaryStage) {
+        Main.primaryStage = primaryStage;
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-//        Parent root = FXMLLoader.load(getClass().getResource("../ch/makery/address/view/PersonOverview.fxml"));
-//
-//        primaryStage.setTitle("test");
-//        primaryStage.setScene(new Scene(root));
-//        primaryStage.setResizable(false);
-//        primaryStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("../iStud/view/Connexion.fxml"));
         Main.primaryStage = primaryStage;
         Main.primaryStage.setTitle("iStud");
-        Main.primaryStage.getIcons().add(new Image(String.valueOf("file:../iStud/resource/image/icone.png")));
+        primaryStage.setScene(new Scene(root));
         Main.primaryStage.setResizable(false);
-        RootLayoutControl.initRootLayout();
-        PersonOverviewController.showPersonOverview();
+        primaryStage.show();
+
     }
 
 

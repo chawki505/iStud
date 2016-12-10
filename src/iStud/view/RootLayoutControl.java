@@ -32,6 +32,7 @@ public class RootLayoutControl {
             Scene scene = new Scene(rootLayout);
             Main.getPrimaryStage().setScene(scene);
             Main.getPrimaryStage().show();
+            Main.getPrimaryStage().setAlwaysOnTop(true);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -211,6 +211,40 @@ public class PersonOverviewController {
 
     }
 
+    //supprimer note test
+    @FXML
+    private void handleDeleteNoteTest() {
+        int selectedIndex = noteTableTest.getSelectionModel().getSelectedIndex();
+        NoteTest select = noteTableTest.getSelectionModel().getSelectedItem();
+        if (selectedIndex >= 0) {
+            cnx.subNotetest(select.getId());
+            setdataEtudiant();
+            noteTableTest.getItems().remove(selectedIndex);
+
+        } else {
+            generateMessageErreurNotSelected();
+        }
+
+
+    }
+
+    //supprimer note hw
+    @FXML
+    private void handleDeleteNoteHW() {
+        int selectedIndex = noteTableHw.getSelectionModel().getSelectedIndex();
+        NoteHW select = noteTableHw.getSelectionModel().getSelectedItem();
+        if (selectedIndex >= 0) {
+            cnx.subNoteHW(select.getId());
+            setdataEtudiant();
+            noteTableHw.getItems().remove(selectedIndex);
+
+        } else {
+            generateMessageErreurNotSelected();
+        }
+
+
+    }
+
     /**
      * Called when the user clicks the new button. Opens a dialog to edit
      * details for a new person.
@@ -240,7 +274,7 @@ public class PersonOverviewController {
 
             if (okClicked) {
                 ListeEtudiant.getPersonDataNoteTest().add(note);
-                cnx.insertionNoteCC(note.getTest(), select.getId());
+                cnx.insertionNoteCC(note, select.getId());
                 initialize();
                 setDataNote(select.getId());
             }
@@ -256,7 +290,7 @@ public class PersonOverviewController {
         if (select != null) {
             boolean okClicked = NoteAddController.showNoteEditDialogHw(note);
             if (okClicked) {
-                cnx.insertionNoteHW(note.getHomeWork(), select.getId());
+                cnx.insertionNoteHW(note, select.getId());
                 setDataNote(select.getId());
 
             }

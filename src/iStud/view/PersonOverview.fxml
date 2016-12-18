@@ -157,8 +157,10 @@
                                                                 </TableView>
                                                             </children>
                                                         </AnchorPane>
-                                                        <Button layoutX="31.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNewNoteTest" text="+" />
-                                                        <Button layoutX="125.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNewNoteHW" text="+" />
+                                                        <Button layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNewNoteTest" prefHeight="25.0" prefWidth="25.0" text="+" />
+                                                        <Button layoutX="110.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNewNoteHW" prefHeight="25.0" prefWidth="25.0" text="+" />
+                                          <Button layoutX="50.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleDeleteNoteTest" prefHeight="25.0" prefWidth="25.0" text="-" />
+                                          <Button layoutX="140.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleDeleteNoteHW" prefHeight="25.0" prefWidth="25.0" text="-" />
                                                     </children>
                                                 </AnchorPane>
                                             </content>

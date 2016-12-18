@@ -5,6 +5,8 @@ import iStud.model.Etudiant;
 import database.DBConnection;
 import database.DBEtudiant;
 import database.DBNote;
+import iStud.model.NoteHW;
+import iStud.model.NoteTest;
 
 
 /**
@@ -89,16 +91,28 @@ public class Connexion {
 
 
     //ajouter note test
-    public void insertionNoteCC(double note, int cle) {
+    public void insertionNoteCC(NoteTest note, int cle) {
         connexion();
         boolean insert = dbNote.insertnoteCC(note, cle);
     }
 
+    //suprimer note test
+    public void subNotetest(int id) {
+        connexion();
+        boolean insert = dbNote.supNoteTest(id);
+    }
+
 
     //ajouter note hw
-    public void insertionNoteHW(double note, int cle) {
+    public void insertionNoteHW(NoteHW note, int cle) {
         connexion();
         boolean insert = dbNote.insertnoteHommeWork(note, cle);
+    }
+
+    //suprimer note hw
+    public void subNoteHW(int id) {
+        connexion();
+        boolean insert = dbNote.supNoteHW(id);
     }
 
 

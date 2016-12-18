@@ -55,7 +55,7 @@ public class PersonEditDialogController {
      *
      * @param etudiant
      */
-    public void setEtudiant(Etudiant etudiant ) {
+    public void setEtudiant(Etudiant etudiant) {
         this.etudiant = etudiant;
 
         firstNameField.setText(etudiant.getNom());

@@ -80,7 +80,7 @@ public class DBEtudiant extends DBConnection {
                     "ETUDIANT.ID=" + id);
             while (resultSet.next()) {
 
-                ListeEtudiant.getPersonDataNoteTest().add(new NoteTest(resultSet.getDouble(10)));
+                ListeEtudiant.getPersonDataNoteTest().add(new NoteTest(resultSet.getDouble(10), resultSet.getInt(9)));
 
             }
             resultSet.close();
@@ -104,7 +104,7 @@ public class DBEtudiant extends DBConnection {
                     "WHERE HOMMEWORK.CLE=" + id + " AND " +
                     "ETUDIANT.ID=" + id);
             while (resultSet.next()) {
-                ListeEtudiant.getPersonDataNoteHW().add(new NoteHW(resultSet.getDouble(10)));
+                ListeEtudiant.getPersonDataNoteHW().add(new NoteHW(resultSet.getDouble(10), resultSet.getInt(9)));
             }
             resultSet.close();
         } catch (SQLException e) {

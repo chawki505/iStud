@@ -178,6 +178,21 @@ public class DBEtudiant extends DBConnection {
         return true;
     }
 
+    //decremente le compteur des absence -1
+    public boolean supAbsence(int id) {
+        if (!isEtat())
+            return false;
+        try {
+            PreparedStatement preparedStatement = getConnection().prepareStatement("UPDATE ETUDIANT SET " +
+                    "ABSENCE=ABSENCE-1 WHERE ID=" + id + " AND ABSENCE >0");
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+        } catch (SQLException e) {
+            return false;
+        }
+        return true;
+    }
+
 
     public boolean edit(int id, String x, int choix) {
         if (!isEtat()) return false;

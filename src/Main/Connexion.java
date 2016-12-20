@@ -133,6 +133,21 @@ public class Connexion {
     public void insertAbsence(int id) {
         connexion();
         boolean insert = dbEtudiant.insertAbsence(id);
+        if (insert) {
+            System.out.println("Execution de l'incrementation des absence : SUCCESS");
+        } else
+            System.out.println("Execution de l'incrementation des absence : ERROR");
+    }
+
+
+    //enlever une absence
+    public void subAbsence(int id) {
+        connexion();
+        boolean sub = dbEtudiant.supAbsence(id);
+        if (sub) {
+            System.out.println("Execution de la decrementation des absence : SUCCESS");
+        } else
+            System.out.println("Execution de la decrementation des absence : ERROR");
     }
 
 

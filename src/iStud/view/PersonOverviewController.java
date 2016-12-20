@@ -164,7 +164,7 @@ public class PersonOverviewController {
         if (person != null) {
             // Fill the labels with info from the person object.
             idLabel.setText(Integer.toString(person.getId()));
-            nomLabel.setText(person.getNom());
+            nomLabel.setText(person.getNom().toUpperCase());
             prenomLabel.setText(person.getPrenom());
             sexeLabel.setText(person.getSexe());
             birthdayLabel.setText(person.getDateNaissance());
@@ -297,18 +297,33 @@ public class PersonOverviewController {
         } else generateMessageErreurNotSelected();
     }
 
+    //incrementation des absence
     @FXML
-    private void abssence() {
+    private void abssenceIncrementation() {
         Etudiant selectedPerson = personTable.getSelectionModel().getSelectedItem();
         if (selectedPerson != null) {
             cnx.insertAbsence(selectedPerson.getId());
             setdataEtudiant();
+            showPersonDetails(selectedPerson);
         } else {
             generateMessageErreurNotSelected();
 
         }
+    }
 
 
+    //decrementation des absence
+    @FXML
+    private void abssenceDecrementation() {
+        Etudiant selectedPerson = personTable.getSelectionModel().getSelectedItem();
+        if (selectedPerson != null) {
+            cnx.subAbsence(selectedPerson.getId());
+            setdataEtudiant();
+            showPersonDetails(selectedPerson);
+        } else {
+            generateMessageErreurNotSelected();
+
+        }
     }
 
     @FXML
@@ -320,8 +335,8 @@ public class PersonOverviewController {
             boolean okClicked = NoteAddController.showNoteEditDialogTest(note);
             if (okClicked) {
                 cnx.insertionNoteExamen(note.getTest(), select.getId());
-                initialize();
                 setdataEtudiant();
+                showPersonDetails(select);
             }
         } else generateMessageErreurNotSelected();
 
@@ -337,8 +352,8 @@ public class PersonOverviewController {
             boolean okClicked = NoteAddController.showNoteEditDialogTest(note);
             if (okClicked) {
                 cnx.insertionPP(note.getTest(), select.getId());
-                initialize();
                 setdataEtudiant();
+                showPersonDetails(select);
             }
         } else generateMessageErreurNotSelected();
 

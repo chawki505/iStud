@@ -68,7 +68,7 @@
                                                                 <Label fx:id="sexeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                                                                 <Label text="Absence" GridPane.rowIndex="5" />
                                                                 <Label fx:id="absenceLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                                                <Button disable="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                <Button mnemonicParsing="false" onAction="#abssenceDecrementation" prefHeight="25.0" prefWidth="25.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                     <GridPane.margin>
                                                                         <Insets left="140.0" />
                                                                     </GridPane.margin>
@@ -76,7 +76,7 @@
                                                                         <Font name="System Bold" size="13.0" />
                                                                     </font>
                                                                 </Button>
-                                                                <Button mnemonicParsing="false" onAction="#abssence" prefHeight="26.0" prefWidth="30.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                <Button mnemonicParsing="false" onAction="#abssenceIncrementation" prefHeight="25.0" prefWidth="25.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                     <GridPane.margin>
                                                                         <Insets left="180.0" />
                                                                     </GridPane.margin>

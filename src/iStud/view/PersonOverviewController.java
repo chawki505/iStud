@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.text.StringCharacterIterator;
 
 /**
  * Created by chawki on 03/12/16.
@@ -205,7 +206,7 @@ public class PersonOverviewController {
             personTable.refresh();
 
         } else {
-            generateMessageErreurNotSelected();
+            generateMessageErreurNotSelected("personne");
         }
 
 
@@ -222,7 +223,7 @@ public class PersonOverviewController {
             noteTableTest.getItems().remove(selectedIndex);
 
         } else {
-            generateMessageErreurNotSelected();
+            generateMessageErreurNotSelected("note");
         }
 
 
@@ -239,7 +240,7 @@ public class PersonOverviewController {
             noteTableHw.getItems().remove(selectedIndex);
 
         } else {
-            generateMessageErreurNotSelected();
+            generateMessageErreurNotSelected("note");
         }
 
 
@@ -278,7 +279,7 @@ public class PersonOverviewController {
                 initialize();
                 setDataNote(select.getId());
             }
-        } else generateMessageErreurNotSelected();
+        } else generateMessageErreurNotSelected("personne");
     }
 
     @FXML
@@ -294,7 +295,7 @@ public class PersonOverviewController {
                 setDataNote(select.getId());
 
             }
-        } else generateMessageErreurNotSelected();
+        } else generateMessageErreurNotSelected("personne");
     }
 
     //incrementation des absence
@@ -306,7 +307,7 @@ public class PersonOverviewController {
             setdataEtudiant();
             showPersonDetails(selectedPerson);
         } else {
-            generateMessageErreurNotSelected();
+            generateMessageErreurNotSelected("personne");
 
         }
     }
@@ -321,7 +322,7 @@ public class PersonOverviewController {
             setdataEtudiant();
             showPersonDetails(selectedPerson);
         } else {
-            generateMessageErreurNotSelected();
+            generateMessageErreurNotSelected("personne");
 
         }
     }
@@ -338,7 +339,7 @@ public class PersonOverviewController {
                 setdataEtudiant();
                 showPersonDetails(select);
             }
-        } else generateMessageErreurNotSelected();
+        } else generateMessageErreurNotSelected("personne");
 
 
     }
@@ -355,17 +356,23 @@ public class PersonOverviewController {
                 setdataEtudiant();
                 showPersonDetails(select);
             }
-        } else generateMessageErreurNotSelected();
+        } else generateMessageErreurNotSelected("personne");
 
 
     }
 
-    private void generateMessageErreurNotSelected() {
+    private void generateMessageErreurNotSelected(String type) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.initOwner(Main.getPrimaryStage());
         alert.setTitle("No Selection");
-        alert.setHeaderText("No Person Selected");
-        alert.setContentText("SVP ! selectioner une personne ");
+        if (type.equals("personne")) {
+            alert.setHeaderText("No Person Selected");
+            alert.setContentText("SVP ! selectioner une personne ");
+        }
+        if (type.equals("note")) {
+            alert.setHeaderText("No Note Selected");
+            alert.setContentText("SVP ! selectioner une note ");
+        }
 
         alert.showAndWait();
     }
@@ -386,7 +393,7 @@ public class PersonOverviewController {
             }
 
         } else {
-            generateMessageErreurNotSelected();
+            generateMessageErreurNotSelected("personne");
         }
     }
 

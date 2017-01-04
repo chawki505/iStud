@@ -1,6 +1,8 @@
 package iStud.view;
 
+import Main.Connexion;
 import Main.Main;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -11,7 +13,10 @@ import java.io.IOException;
  * Created by chawki on 07/12/16.
  */
 public class RootLayoutControl {
+
+    private Connexion cnx = new Connexion();
     private static BorderPane rootLayout;
+
 
     public static BorderPane getRootLayout() {
         return rootLayout;
@@ -37,5 +42,15 @@ public class RootLayoutControl {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private void creatBDD() {
+        cnx.creation();
+    }
+
+    @FXML
+    private void supBDD() {
+        cnx.viderbdd();
     }
 }

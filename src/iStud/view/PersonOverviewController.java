@@ -3,11 +3,11 @@ package iStud.view;
 import iStud.model.Etudiant;
 import iStud.model.NoteHW;
 import iStud.model.NoteTest;
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
+
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.text.StringCharacterIterator;
+
 
 /**
  * Created by chawki on 03/12/16.
@@ -98,7 +98,6 @@ public class PersonOverviewController {
     @FXML
     private void initialize() {
         // Initialize the person table with the two columns.
-
 
         idColumn.setCellValueFactory(
                 cellData -> cellData.getValue().idProperty());
@@ -340,8 +339,6 @@ public class PersonOverviewController {
                 showPersonDetails(select);
             }
         } else generateMessageErreurNotSelected("personne");
-
-
     }
 
     @FXML

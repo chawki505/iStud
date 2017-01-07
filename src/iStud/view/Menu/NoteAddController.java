@@ -1,4 +1,4 @@
-package iStud.view;
+package iStud.view.Menu;
 
 import Main.Main;
 import iStud.model.NoteHW;

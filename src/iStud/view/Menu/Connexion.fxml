@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.ConnexionController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.Menu.ConnexionController">
    <children>
       <Pane layoutX="363.0" layoutY="98.0" prefHeight="323.0" prefWidth="417.0" style="-fx-border-color: #C3BABA; -fx-border-radius: 10; -fx-background-color: #ECECEC; -fx-background-radius: 10;">
          <children>
@@ -49,7 +49,7 @@
             </GridPane>
             <ImageView fitHeight="45.0" fitWidth="186.0" layoutX="116.0" layoutY="253.0" pickOnBounds="true">
                <image>
-                  <Image url="@../resource/image/background/login-button-png-15.png" />
+                  <Image url="@../../resource/image/background/login-button-png-15.png" />
                </image>
             </ImageView>
             <Button layoutX="120.0" layoutY="253.0" mnemonicParsing="false" onAction="#ToMenuP" opacity="0.0" prefHeight="45.0" prefWidth="175.0" style="-fx-background-radius: 50;" text="Connexion">
@@ -70,12 +70,12 @@
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="323.0" fitWidth="316.0" layoutX="24.0" layoutY="98.0" pickOnBounds="true">
          <image>
-            <Image url="@../resource/image/background/start.png" />
+            <Image url="@../../resource/image/background/start.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="307.0" layoutX="42.0" layoutY="23.0" pickOnBounds="true">
          <image>
-            <Image url="@../resource/image/background/titre3.png" />
+            <Image url="@../../resource/image/background/titre3.png" />
          </image>
       </ImageView>
    </children>

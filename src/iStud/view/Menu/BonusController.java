@@ -1,4 +1,4 @@
-package iStud.view;
+package iStud.view.Menu;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,7 +18,7 @@ public class BonusController {
 
     @FXML
     public void ToMICINY(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/MenuBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Menu/MenuBio.fxml"));
         passage(actionEvent, page);
     }
 
@@ -26,49 +26,49 @@ public class BonusController {
 
     @FXML
     private void ToImedBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/ImedBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Bio/ImedBio.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     private void ToMohamedBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/mohamedBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Bio/mohamedBio.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     private void ToIbtissemBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/IbtissemBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Bio/IbtissemBio.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     private void ToYassminBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/YassmineBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Bio/YassmineBio.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     private void ToMenuBonus(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BonusA.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Menu/BonusA.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     private void ToiStud(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/iStudBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Bio/iStudBio.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     public void ToMenuP(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("MenuPrincipale.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Menu/MenuPrincipale.fxml"));
         passage(actionEvent, page);
     }
 
     @FXML
     private void ToMenuBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Bio/MenuBio.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Menu/MenuBio.fxml"));
         passage(actionEvent, page);
     }
 

@@ -1,4 +1,4 @@
-package iStud.view;
+package iStud.view.Menu;
 
 import iStud.model.Etudiant;
 import iStud.model.NoteHW;
@@ -160,8 +160,8 @@ public class PersonOverviewController {
         if (person != null) {
             // Fill the labels with info from the person object.
             idLabel.setText(Integer.toString(person.getId()));
-            nomLabel.setText(person.getNom().toUpperCase());
-            prenomLabel.setText(person.getPrenom());
+            nomLabel.setText(person.getNom());
+            prenomLabel.setText(person.getPrenom().toUpperCase());
             sexeLabel.setText(person.getSexe());
             birthdayLabel.setText(person.getDateNaissance());
             absenceLabel.setText(Integer.toString(person.getAbsence()));

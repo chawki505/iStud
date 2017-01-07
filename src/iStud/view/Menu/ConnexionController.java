@@ -1,4 +1,4 @@
-package iStud.view;
+package iStud.view.Menu;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

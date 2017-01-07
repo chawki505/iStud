@@ -70,6 +70,7 @@ public class DBConnection {
     /**
      * Methode pour la connection avec la base de données
      **/
+
     public void connect() {
 
         try {
@@ -89,6 +90,7 @@ public class DBConnection {
      *
      * @return Etat de l'execution de la methode
      */
+
     public boolean contract() {
 
         if (!etat)

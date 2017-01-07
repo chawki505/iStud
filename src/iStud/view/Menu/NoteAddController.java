@@ -1,4 +1,4 @@
-package iStud.view;
+package iStud.view.Menu;
 
 import Main.Main;
 import iStud.model.NoteHW;
@@ -30,11 +30,12 @@ public class NoteAddController {
 
     private static String choix;
 
+
     public NoteHW getNoteHW() {
         return noteHW;
     }
 
-    public static void setChoix(String choix) {
+    static void setChoix(String choix) {
         NoteAddController.choix = choix;
     }
 
@@ -43,12 +44,12 @@ public class NoteAddController {
 
     }
 
-    public void setDialogStage(Stage dialogStage) {
+    private void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
     }
 
 
-    public boolean isOkClicked() {
+    private boolean isOkClicked() {
         return okClicked;
     }
 

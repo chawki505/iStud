@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="190.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.NoteAddController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="190.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.Menu.NoteAddController">
    <children>
       <TextField fx:id="noteField" layoutX="14.0" layoutY="36.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
       <Label layoutX="80.0" layoutY="11.0" prefHeight="16.0" prefWidth="20.0" text="Note" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="15.0" />

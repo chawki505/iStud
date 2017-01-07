@@ -8,8 +8,6 @@ import javafx.scene.Scene;
 
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 
 public class Main extends Application {
 
@@ -27,7 +25,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/iStud/view/Connexion.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/iStud/view/Menu/Connexion.fxml"));
         Main.primaryStage = primaryStage;
         Main.primaryStage.setTitle("iStud");
         Main.primaryStage.setScene(new Scene(root));

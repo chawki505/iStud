@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.Menu.BonusController">
+   <children>
+      <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="680.0" prefWidth="634.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="673.0" prefWidth="628.0">
+               <children>
+                  <ImageView fitHeight="680.0" fitWidth="634.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../resource/image/background/carB.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="628.0" prefWidth="582.0" text="&#10;&#10;&#10;  MIMOUNI Mohamed ,né 20 avril 1996 à Oran&#10;fait ses étude à l'université d'Oran Ahmed Ben&#10;Bella en domaine informatique .&#10;   &#10;   Mohamed a eu toujours un caractére spécial&#10;d'avoir des difficultés d'accépter les choses ... &#10;en gros il n'aime pas beaucoup de chose , manger ,dormir et les voitures sont ces seul passions dans la vie . &#10;&#10;   A eu son BAC en 2014 il décide de continuer ses études à l'université dans le monde des nombres décimal et binaire ... réussit sa premiére année il passe en L2 informatique ou il s'est trouvé avec le groupe MICINY  et représentant du M ,équipe avec RABAH Imed ( équipe MI ) et dans le rôle de designer en Swing de plus qu'il est diplômé en JAVA  aprés avoir fais formation." wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView disable="true" fitHeight="680.0" fitWidth="634.0" focusTraversable="true" opacity="0.16" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../resource/image/background/carB.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="185.0" fitWidth="166.0" layoutX="422.0" layoutY="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" AnchorPane.leftAnchor="422.0">
+                     <image>
+                        <Image url="@../../resource/image/picMembre/mohamed.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="DARKEN" />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="35.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIMOUNI Mohamed" underline="true">
+                     <font>
+                        <Font name="Georgia Italic" size="35.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="35.0" layoutY="623.0" mnemonicParsing="false" onAction="#ToMenuBio" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9d2d00; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>

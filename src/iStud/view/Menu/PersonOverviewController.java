@@ -1,9 +1,10 @@
-package iStud.view;
+package iStud.view.Menu;
 
 import iStud.model.Etudiant;
 import iStud.model.NoteHW;
 import iStud.model.NoteTest;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
@@ -89,12 +90,7 @@ public class PersonOverviewController {
      * Initializes the controller class. This method is automatically called
      * after the fxml file has been loaded.
      */
-//    @FXML
-//    private void initialize() {
-//        // Initialize the person table with the two columns.
-//        firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().nomProperty());
-//        lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().prenomProperty());
-//    }
+
     @FXML
     private void initialize() {
         // Initialize the person table with the two columns.
@@ -164,8 +160,8 @@ public class PersonOverviewController {
         if (person != null) {
             // Fill the labels with info from the person object.
             idLabel.setText(Integer.toString(person.getId()));
-            nomLabel.setText(person.getNom().toUpperCase());
-            prenomLabel.setText(person.getPrenom());
+            nomLabel.setText(person.getNom());
+            prenomLabel.setText(person.getPrenom().toUpperCase());
             sexeLabel.setText(person.getSexe());
             birthdayLabel.setText(person.getDateNaissance());
             absenceLabel.setText(Integer.toString(person.getAbsence()));
@@ -394,6 +390,11 @@ public class PersonOverviewController {
         }
     }
 
+    @FXML
+    private void ToMenuP(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("MenuPrincipale.fxml"));
+        ConnexionController.passage(actionEvent,page);
+    }
 
     //methode principal pour lencer l'interface
     public static void showPersonOverview() {

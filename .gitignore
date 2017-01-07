@@ -61,3 +61,8 @@ hs_err_pid*
 /.idea/
 /src/META-INF/
 /learnjavafx.iml
+<<<<<<< HEAD
+=======
+*.iml
+iStudFinalVersion.iml
+>>>>>>> brancheImed

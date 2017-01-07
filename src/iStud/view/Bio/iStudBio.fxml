@@ -23,12 +23,12 @@
                         <Image url="@../../resource/image/background/ba8a2feb.png" />
                      </image>
                   </ImageView>
-                  <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="611.0" prefWidth="582.0" text="&#10;&#10;&#10;   iStud est une application de gestion&#10;d'étudiant disponible sur Windows 32bits &#10;et 64bits récemment  .Elle est conçue et &#10;développée par des étudiants de l'université Ahmed Ben Bella en Algérie Oran .&#10;&#10;    La particularité de cette application est la FRS ( Facilité ,Rapidité et la Simplicité ) ,ainsi même les personne sans niveau de connaissance informatique seront capable d'utiliser cette application en toute facilité  et Rapidité surtout .&#10;&#10;    Le groupe MICINY le groupe développeur de cette application sont des étudiants En L2 informaitque dont : MIMOUNI Mohamed , RABAH Imed ,CHOUIB Chawki ,DJIZIRI Ibtissem ,MAKRELOUFI Yassmine et KADOUR BRAHIM Nessrine .&#10;&#10;    Les taches du team MICINY a été donné selon l'ordre suivant : &#10;&#9;&#9;-L'équipe MI : MIMOUNI Mohamed &amp; RABAH Imed sont les responsables du design et developpement des interfaces Graphiques .&#10;&#9;&#9;-L'équipe CI : CHOUIB Chawki &amp; DJIZIRI Ibtissem responsables des bases de données de l'application .&#10;&#9;&#9;-L'équipe NY : KADOUR BRAHIM Nessrine &amp; MAKRELOUFI Yassmine responsables des algorithmes de bases de l'application ." wrapText="true">
+                  <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="611.0" prefWidth="582.0" text="&#10;&#10;&#10;   iStud est une application de gestion&#10;d'étudiant disponible sur Windows/linux/macOs.&#10;Elle est conçue et développée par des étudiants de l'université&#10;d'oran 1 Ahmed Ben Bella en Algérie .&#10;&#10;    La particularité de cette application est la FRS ( Facilité ,Rapidité et la Simplicité ) ,ainsi même les personne sans niveau de connaissance informatique seront capable d'utiliser cette application en toute facilité  et Rapidité surtout .&#10;&#10;    Le groupe MICINY le groupe développeur de cette application sont des étudiants En L2 informaitque dont : MIMOUNI Mohamed , RABAH Imed ,CHOUIB Chawki ,DJIZIRI Ibtissem ,MAKRELOUFI Yassmine et KADOUR BRAHIM Nessrine .&#10;&#10;    Les taches du team MICINY a été donné selon l'ordre suivant : &#10;&#9;&#9;-L'équipe MI : MIMOUNI Mohamed &amp; RABAH Imed sont les responsables du design et developpement des interfaces Graphiques .&#10;&#9;&#9;-L'équipe CI : CHOUIB Chawki &amp; DJIZIRI Ibtissem responsables des bases de données de l'application .&#10;&#9;&#9;-L'équipe NY : KADOUR BRAHIM Nessrine &amp; MAKRELOUFI Yassmine responsables des algorithmes de bases de l'application ." wrapText="true">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </TextArea>
-                  <ImageView fitHeight="168.0" fitWidth="195.0" layoutX="386.0" layoutY="51.0" pickOnBounds="true">
+                  <ImageView fitHeight="151.0" fitWidth="176.0" layoutX="424.0" layoutY="39.0" pickOnBounds="true">
                      <image>
                         <Image url="@../../resource/image/background/titre3.png" />
                      </image>
@@ -36,7 +36,7 @@
                         <Blend mode="DARKEN" />
                      </effect>
                   </ImageView>
-                  <ImageView disable="true" fitHeight="708.0" fitWidth="634.0" focusTraversable="true" layoutY="9.0" opacity="0.12" pickOnBounds="true">
+                  <ImageView disable="true" fitHeight="708.0" fitWidth="634.0" focusTraversable="true" layoutX="3.0" layoutY="9.0" opacity="0.12" pickOnBounds="true">
                      <image>
                         <Image url="@../../resource/image/background/ba8a2feb.png" />
                      </image>

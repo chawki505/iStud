@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.BonusController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.BonusController">
    <children>
       <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="680.0" prefWidth="634.0">
         <content>
@@ -16,7 +19,7 @@
                <children>
                   <ImageView fitHeight="680.0" fitWidth="634.0" pickOnBounds="true">
                      <image>
-                        <Image url="@../resource/image/whiteB.jpg" />
+                        <Image url="@../../resource/image/background/whiteB.jpg" />
                      </image>
                   </ImageView>
                   <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="628.0" prefWidth="582.0" text="&#10;&#10;&#10;  &#10;    MAKRELOUFI Yassmine, née le&#10;27 décembre 1995 à Oran ,Fait ses &#10;études a l'université Ahmed BEN BELLA&#10;en domaine informatique .&#10;&#10;    Yassmine a eu son BAC TM -Technique &#10;Math- en éléctricité en 2014, et bien aussi qu'elle a suivie une formatio de création de logiciel l'a insité a faire informatique a l'Université d'Oran .&#10;&#10;    Son ambiton depuis toujours de l'avenir est d'être une figure efficace dans son domaine académique .&#10;&#10;    Devenue membre du groupe MICINY alors qu'elle étati en Deuxiéme année Licence en informatique et trvaillait dans le DUO ( KADDOUR BRAHIM Nessrine &amp; MAKRELOUFI Yassmine ). Travaillant sur les aspects algorithmique du projet iStud et developpeuse de celui-ci . " wrapText="true">
@@ -26,12 +29,12 @@
                   </TextArea>
                   <ImageView disable="true" fitHeight="680.0" fitWidth="634.0" focusTraversable="true" opacity="0.16" pickOnBounds="true">
                      <image>
-                        <Image url="@../resource/image/whiteB.jpg" />
+                        <Image url="@../../resource/image/background/whiteB.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="242.0" fitWidth="231.0" layoutX="350.0" layoutY="59.0" pickOnBounds="true" smooth="false">
+                  <ImageView fitHeight="198.0" fitWidth="207.0" layoutX="381.0" layoutY="59.0" pickOnBounds="true" smooth="false">
                      <image>
-                        <Image url="@../resource/image/youyou.jpg" />
+                        <Image url="@../../resource/image/picMembre/youyou.jpg" />
                      </image>
                   </ImageView>
                   <Text layoutX="35.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAKRELOUFI Yassmine" underline="true" wrappingWidth="364.97216796875">

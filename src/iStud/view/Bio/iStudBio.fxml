@@ -12,15 +12,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.BonusController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.BonusController">
    <children>
-      <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="708.0" prefWidth="634.0">
+      <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="725.0" prefWidth="640.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="712.0" prefWidth="628.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="725.0" prefWidth="640.0">
                <children>
-                  <ImageView fitHeight="708.0" fitWidth="634.0" pickOnBounds="true">
+                  <ImageView fitHeight="720.0" fitWidth="640.0" pickOnBounds="true">
                      <image>
-                        <Image url="@../resource/image/ba8a2feb.png" />
+                        <Image url="@../../resource/image/background/ba8a2feb.png" />
                      </image>
                   </ImageView>
                   <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="611.0" prefWidth="582.0" text="&#10;&#10;&#10;   iStud est une application de gestion&#10;d'étudiant disponible sur Windows 32bits &#10;et 64bits récemment  .Elle est conçue et &#10;développée par des étudiants de l'université Ahmed Ben Bella en Algérie Oran .&#10;&#10;    La particularité de cette application est la FRS ( Facilité ,Rapidité et la Simplicité ) ,ainsi même les personne sans niveau de connaissance informatique seront capable d'utiliser cette application en toute facilité  et Rapidité surtout .&#10;&#10;    Le groupe MICINY le groupe développeur de cette application sont des étudiants En L2 informaitque dont : MIMOUNI Mohamed , RABAH Imed ,CHOUIB Chawki ,DJIZIRI Ibtissem ,MAKRELOUFI Yassmine et KADOUR BRAHIM Nessrine .&#10;&#10;    Les taches du team MICINY a été donné selon l'ordre suivant : &#10;&#9;&#9;-L'équipe MI : MIMOUNI Mohamed &amp; RABAH Imed sont les responsables du design et developpement des interfaces Graphiques .&#10;&#9;&#9;-L'équipe CI : CHOUIB Chawki &amp; DJIZIRI Ibtissem responsables des bases de données de l'application .&#10;&#9;&#9;-L'équipe NY : KADOUR BRAHIM Nessrine &amp; MAKRELOUFI Yassmine responsables des algorithmes de bases de l'application ." wrapText="true">
@@ -28,17 +28,17 @@
                         <Font size="17.0" />
                      </font>
                   </TextArea>
-                  <ImageView fitHeight="197.0" fitWidth="195.0" layoutX="386.0" layoutY="51.0" pickOnBounds="true">
+                  <ImageView fitHeight="168.0" fitWidth="195.0" layoutX="386.0" layoutY="51.0" pickOnBounds="true">
                      <image>
-                        <Image url="@../resource/image/titre3.png" />
+                        <Image url="@../../resource/image/background/titre3.png" />
                      </image>
                      <effect>
                         <Blend mode="DARKEN" />
                      </effect>
                   </ImageView>
-                  <ImageView disable="true" fitHeight="708.0" fitWidth="634.0" focusTraversable="true" opacity="0.12" pickOnBounds="true">
+                  <ImageView disable="true" fitHeight="708.0" fitWidth="634.0" focusTraversable="true" layoutY="9.0" opacity="0.12" pickOnBounds="true">
                      <image>
-                        <Image url="@../resource/image/ba8a2feb.png" />
+                        <Image url="@../../resource/image/background/ba8a2feb.png" />
                      </image>
                   </ImageView>
                   <Button layoutX="24.0" layoutY="668.0" mnemonicParsing="false" onAction="#ToMenuBonus" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9d2d00; -fx-background-radius: 50;" text="Back" textFill="WHITE">

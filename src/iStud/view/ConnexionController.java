@@ -16,8 +16,12 @@ import java.io.IOException;
 public class ConnexionController {
 
     @FXML
-    public void ToMenuP(ActionEvent actionEvent) throws IOException {
+    private void ToMenuP(ActionEvent actionEvent) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("MenuPrincipale.fxml"));
+        passage(actionEvent, page);
+    }
+
+    static void passage(ActionEvent actionEvent, Parent page) {
         Scene scene = new Scene(page);
         Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         app_stage.setScene(scene);

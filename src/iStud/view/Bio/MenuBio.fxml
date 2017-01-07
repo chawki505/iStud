@@ -11,37 +11,37 @@
    <children>
       <ImageView fitHeight="578.0" fitWidth="761.0" opacity="0.31" pickOnBounds="true">
          <image>
-            <Image url="@../resource/image/whitieB.jpg" />
+            <Image url="@../../resource/image/background/whitieB.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="306.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resource/image/myAvatar7.png" />
+            <Image url="@../../resource/image/Avatar/myAvatar4.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resource/image/myAvatar2.png" />
+            <Image url="@../../resource/image/Avatar/myAvatar2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="531.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resource/image/myAvatar3.png" />
+            <Image url="@../../resource/image/Avatar/myAvatar3.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="480.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resource/image/myAvatar5.png" />
+            <Image url="@../../resource/image/Avatar/myAvatar5.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resource/image/myAvatar6.png" />
+            <Image url="@../../resource/image/Avatar/myAvatar6.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="305.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resource/image/myAvatar.png" />
+            <Image url="@../../resource/image/Avatar/myAvatar1.png" />
          </image>
       </ImageView>
       <Text layoutX="224.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a character">

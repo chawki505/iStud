@@ -17,7 +17,7 @@ import java.io.IOException;
 public class MenuPrincipaleController {
 
     @FXML
-    Label UserAcc;
+    private Label UserAcc;
 
 
     @FXML

@@ -3,16 +3,11 @@ package iStud.view;
 import Main.Main;
 import iStud.model.NoteHW;
 import iStud.model.NoteTest;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -40,7 +35,7 @@ public class NoteAddController {
         return noteHW;
     }
 
-    public static void setChoix(String choix) {
+    static void setChoix(String choix) {
         NoteAddController.choix = choix;
     }
 
@@ -49,12 +44,12 @@ public class NoteAddController {
 
     }
 
-    public void setDialogStage(Stage dialogStage) {
+    private void setDialogStage(Stage dialogStage) {
         this.dialogStage = dialogStage;
     }
 
 
-    public boolean isOkClicked() {
+    private boolean isOkClicked() {
         return okClicked;
     }
 

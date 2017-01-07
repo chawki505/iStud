@@ -18,83 +18,65 @@ public class BonusController {
 
     @FXML
     public void ToMICINY(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("MenuBio.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/MenuBio.fxml"));
+        passage(actionEvent, page);
+    }
+
+
+
+    @FXML
+    private void ToImedBio(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/ImedBio.fxml"));
+        passage(actionEvent, page);
     }
 
     @FXML
-    public void ToImedBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("ImedBio.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+    private void ToMohamedBio(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/mohamedBio.fxml"));
+        passage(actionEvent, page);
     }
 
     @FXML
-    public void ToMohamedBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("MohamedBio.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+    private void ToIbtissemBio(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/IbtissemBio.fxml"));
+        passage(actionEvent, page);
     }
 
     @FXML
-    public void ToIbtissemBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("IbtissemBio.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+    private void ToYassminBio(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/YassmineBio.fxml"));
+        passage(actionEvent, page);
     }
 
     @FXML
-    public void ToYassminBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("YassmineBio.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
-    }
-
-    @FXML
-    public void ToMenuBonus(ActionEvent actionEvent) throws IOException {
+    private void ToMenuBonus(ActionEvent actionEvent) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("BonusA.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+        passage(actionEvent, page);
     }
 
     @FXML
-    public void ToiStud(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("iStudBio.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+    private void ToiStud(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/iStudBio.fxml"));
+        passage(actionEvent, page);
     }
 
     @FXML
     public void ToMenuP(ActionEvent actionEvent) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("MenuPrincipale.fxml"));
-        Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        app_stage.setScene(scene);
-        app_stage.show();
+        passage(actionEvent, page);
     }
 
     @FXML
-    public void ToMenuBio(ActionEvent actionEvent) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("MenuBio.fxml"));
+    private void ToMenuBio(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("Bio/MenuBio.fxml"));
+        passage(actionEvent, page);
+    }
+
+    private void passage(ActionEvent actionEvent, Parent page) {
         Scene scene = new Scene(page);
         Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         app_stage.setScene(scene);
+        app_stage.centerOnScreen();
         app_stage.show();
     }
-
 }

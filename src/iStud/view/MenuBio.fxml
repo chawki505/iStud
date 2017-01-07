@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.BonusController">
+   <children>
+      <ImageView fitHeight="578.0" fitWidth="761.0" opacity="0.31" pickOnBounds="true">
+         <image>
+            <Image url="@../resource/image/whitieB.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="306.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/image/myAvatar7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/image/myAvatar2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="531.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/image/myAvatar3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="480.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/image/myAvatar5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/image/myAvatar6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="305.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/image/myAvatar.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="224.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a character">
+         <font>
+            <Font name="ChaparralPro-Regular" size="43.0" />
+         </font>
+      </Text>
+      <Button fx:id="ImedB" layoutX="309.0" layoutY="304.0" mnemonicParsing="false" onAction="#ToImedBio" opacity="0.0" prefHeight="142.0" prefWidth="141.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="YassminB" layoutX="68.0" layoutY="219.0" mnemonicParsing="false" onAction="#ToYassminBio" opacity="0.0" prefHeight="150.0" prefWidth="141.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="BtissamBio" layoutX="483.0" layoutY="393.0" mnemonicParsing="false" onAction="#ToIbtissemBio" opacity="0.0" prefHeight="157.0" prefWidth="141.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="NessB" layoutX="526.0" layoutY="213.0" mnemonicParsing="false" opacity="0.0" prefHeight="157.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="ChawkiBio" layoutX="119.0" layoutY="395.0" mnemonicParsing="false" opacity="0.0" prefHeight="157.0" prefWidth="150.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="MedBio" layoutX="307.0" layoutY="121.0" mnemonicParsing="false" onAction="#ToMohamedBio" opacity="0.0" prefHeight="157.0" prefWidth="150.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="28.0" layoutY="527.0" mnemonicParsing="false" onAction="#ToMenuBonus" text="Retour">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

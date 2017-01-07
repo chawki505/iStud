@@ -4,10 +4,12 @@ import iStud.model.Etudiant;
 import iStud.model.NoteHW;
 import iStud.model.NoteTest;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.fxml.FXMLLoader;
 
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -394,6 +396,14 @@ public class PersonOverviewController {
         }
     }
 
+    @FXML
+    public void ToMenuP(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("MenuPrincipale.fxml"));
+        Scene scene = new Scene(page);
+        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        app_stage.setScene(scene);
+        app_stage.show();
+    }
 
     //methode principal pour lencer l'interface
     public static void showPersonOverview() {

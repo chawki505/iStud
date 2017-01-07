@@ -169,7 +169,7 @@
                                 </TabPane>
                             </children>
                         </AnchorPane>
-                        <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#retour" text="Retour" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+                        <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#ToMenuP" text="Retour" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
                     </children>
                 </AnchorPane>
             </items>

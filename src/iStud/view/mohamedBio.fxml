@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" fx:controller="iStud.view.BonusController" prefHeight="680.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="680.0" prefWidth="634.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="673.0" prefWidth="628.0">
+               <children>
+                  <ImageView fitHeight="680.0" fitWidth="634.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resource/image/carB.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="628.0" prefWidth="582.0" text="&#10;&#10;&#10;  MIMOUNI Mohamed ,né 20 avril 1996 à Oran&#10;fait ses étude à l'université d'Oran Ahmed Ben&#10;Bella en domaine informatique .&#10;   &#10;   Mohamed a eu toujours un caractére spécial&#10;d'avoir des difficultés d'accépter les choses ... &#10;en gros il n'aime pas beaucoup de chose , manger ,dormir et les voitures sont ces seul passions dans la vie . &#10;&#10;   A eu son BAC en 2014 il décide de continuer ses études à l'université dans le monde des nombres décimal et binaire ... réussit sa premiére année il passe en L2 informatique ou il s'est trouvé avec le groupe MICINY  et représentant du M ,équipe avec RABAH Imed ( équipe MI ) et dans le rôle de designer en Swing de plus qu'il est diplômé en JAVA  aprés avoir fais formation." wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView disable="true" fitHeight="680.0" fitWidth="634.0" focusTraversable="true" opacity="0.16" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resource/image/carB.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="197.0" fitWidth="195.0" layoutX="386.0" layoutY="59.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resource/image/mohamed.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="DARKEN" />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="35.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MIMOUNI Mohamed" underline="true">
+                     <font>
+                        <Font name="Georgia Italic" size="35.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="35.0" layoutY="623.0" onAction="#ToMenuBio" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9d2d00; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" fx:controller="iStud.view.BonusController" prefHeight="680.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="680.0" prefWidth="634.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="673.0" prefWidth="628.0">
+               <children>
+                  <ImageView fitHeight="680.0" fitWidth="634.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resource/image/redB.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="628.0" prefWidth="582.0" text="&#10;&#10;&#10;    DJIZIRI Ibtissem ,née le 19 décembre 1995&#10;à Oran, étudiante a l'université d'Oran Ahmed&#10;Ben Bella .En domaine informatique .&#10;&#10;    Elle a eu son BAC en 2014 ,Elle a fait le choix&#10;d'entamer ses études en Architecture au début &#10;En 2015 elle change d'avis et décide de changé de filière .&#10;&#10;    Elle parle Français et Arabe , en faisant du bénévola. Elle est du genre a cherché à aider les personnes de sa communauté et adore interagir avec des gens de diverses cultures et Origines .&#10;     &#10;     Ibtissem accorde beaucoup d'importance à son rendement scolaire ,bien qu'elle pense que profiter de la vie est tout aussi important ,Le sport et la musique pour elle est le moyen idéal pour déstresser et garder le moral .Elle fait équipe avec CHOUIB Chawki dans le groupe MICINY ... c'est le groupe CI respensable des bases de données dans le projet iStud ." wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView disable="true" fitHeight="680.0" fitWidth="634.0" focusTraversable="true" opacity="0.12" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resource/image/redB.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="197.0" fitWidth="195.0" layoutX="399.0" layoutY="62.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resource/image/btissam.jpg" />
+                     </image>
+                     <effect>
+                        <Blend mode="DARKEN" />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="52.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DJEZIRI Ibtissem" underline="true">
+                     <font>
+                        <Font name="Georgia Italic" size="35.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="35.0" layoutY="623.0" onAction="#ToMenuBio" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9d2d00; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>

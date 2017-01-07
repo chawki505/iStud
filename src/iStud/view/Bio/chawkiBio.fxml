@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.Menu.BonusController">
+    <children>
+        <ScrollPane layoutX="1.0" layoutY="1.0" prefHeight="680.0" prefWidth="634.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="673.0" prefWidth="628.0">
+                    <children>
+                        <ImageView fitHeight="680.0" fitWidth="634.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../../resource/image/background/backgroundeChawki.jpg" />
+                            </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="24.0" layoutY="33.0" prefHeight="628.0" prefWidth="582.0" text="&#10;&#10;&#10;&#10; &#9;étudiant en deuxième année informatique , &#10; &#9;né le 12 aout 1996 , &#10; &#9;ma passion est la technologie moderne &#10;et la nouvel aire de l’informatique.&#10; &#9;Simple sérieux j’aime le travail bien fait &#10;et la discipline &#10;&#9;meneur d’équipe j’ai pas peur des&#10; responsabilité (qui ne tente rien na rien).&#10;&#9;parle couramment le français , l’arabe et l’anglais et un peu de l’espagnol &#10;&#9; autonome dans la vie je ne compte sur personne &#10;( on est jamais mieux servie que par soi-même )&#10;&#9; j’ai contribuer au projet iStud dans l’équipe MICINY, je suis le chef d’équipe ma tache est de superviser le travail des autres membres et de les diriger en même temp je fait équipe avec DJEZIRI Ibtissem pour l’aspect technique du projet (base de donnes)&#10;" wrapText="true">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </TextArea>
+                        <ImageView fitHeight="680.0" fitWidth="634.0" focusTraversable="true" layoutX="-6.0" layoutY="7.0" opacity="0.1" pickOnBounds="true">
+                            <image>
+                                <Image url="@../../resource/image/background/backgroundeChawki.jpg" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="52.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOUIB Chawki" underline="true">
+                            <font>
+                                <Font name="Georgia Italic" size="35.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="35.0" layoutY="623.0" mnemonicParsing="false" onAction="#ToMenuBio" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #9d2d00; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                  <ImageView fitHeight="233.0" fitWidth="161.0" layoutX="422.0" layoutY="56.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../resource/image/picMembre/chawki.jpg" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

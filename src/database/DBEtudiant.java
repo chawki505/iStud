@@ -47,7 +47,6 @@ public class DBEtudiant extends DBConnection {
     public boolean updateEtudiant(Etudiant etudiant, int id) {
         if (!isEtat())
             return false;
-
         try {
 
             PreparedStatement preparedStatement = getConnection().prepareStatement("UPDATE  ETUDIANT SET " +
@@ -73,7 +72,6 @@ public class DBEtudiant extends DBConnection {
         }
         ListeEtudiant.getPersonDataNoteTest().clear();
 
-
         try {
 
             ResultSet resultSet = query("SELECT *FROM ETUDIANT,TEST " +
@@ -96,11 +94,9 @@ public class DBEtudiant extends DBConnection {
         if (!isEtat()) {
             return false;
         }
-
         ListeEtudiant.getPersonDataNoteHW().clear();
 
         try {
-
             ResultSet resultSet = query("SELECT *FROM ETUDIANT,HOMMEWORK " +
                     "WHERE HOMMEWORK.CLE=" + id + " AND " +
                     "ETUDIANT.ID=" + id);

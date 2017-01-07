@@ -23,6 +23,11 @@ public class BonusController {
     }
 
 
+    @FXML
+    private void ToChawkiBio(ActionEvent actionEvent) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("/iStud/view/Bio/chawkiBio.fxml"));
+        passage(actionEvent, page);
+    }
 
     @FXML
     private void ToImedBio(ActionEvent actionEvent) throws IOException {
@@ -74,7 +79,7 @@ public class BonusController {
 
     private void passage(ActionEvent actionEvent, Parent page) {
         Scene scene = new Scene(page);
-        Stage app_stage=(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         app_stage.setScene(scene);
         app_stage.centerOnScreen();
         app_stage.show();

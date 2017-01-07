@@ -72,7 +72,6 @@ public class DBConnection {
      **/
 
     public void connect() {
-
         try {
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection("jdbc:sqlite:" + bdd);

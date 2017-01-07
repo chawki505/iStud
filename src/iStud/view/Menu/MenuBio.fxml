@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.Menu.BonusController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iStud.view.Menu.BonusController">
    <children>
       <ImageView fitHeight="578.0" fitWidth="761.0" opacity="0.31" pickOnBounds="true">
          <image>
@@ -69,7 +70,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="ChawkiBio" layoutX="119.0" layoutY="395.0" mnemonicParsing="false" opacity="0.0" prefHeight="157.0" prefWidth="150.0" text="Button">
+      <Button fx:id="ChawkiBio" layoutX="119.0" layoutY="395.0" mnemonicParsing="false" onAction="#ToChawkiBio" opacity="0.0" prefHeight="157.0" prefWidth="150.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
